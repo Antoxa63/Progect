@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Antoxa63/Progect/issues"
   },
-  "homepage": "https://github.com/Antoxa63/Progect#readme"
+  "homepage": "https://github.com/Antoxa63/Progect#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
