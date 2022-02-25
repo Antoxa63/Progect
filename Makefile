@@ -1,2 +1,2 @@
 say:
-	echo "Hello!"
+	ls -la
