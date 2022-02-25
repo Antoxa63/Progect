@@ -1,2 +1,2 @@
-say-hello:
-    Hello, World!
+say:
+	echo "Hello!"
