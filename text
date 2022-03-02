@@ -24,3 +24,20 @@ const generateQuestionAnswer = () => {
 
   return [question, answer];
 };
+
+
+const progres = (x, y) => {
+  
+ let result = [] 
+ while(result.length <= 10 )  {   
+   x = x + y
+   result.push(x)
+ }
+console.log(result[3])
+  let z = '..'
+  result[3] = z
+  result = result.toString()  
+  return result
+}
+
+console.log(progres(12, 36))
