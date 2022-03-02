@@ -41,3 +41,35 @@ console.log(result[3])
 }
 
 console.log(progres(12, 36))
+
+
+const getRandomNumber = (min, max = 10) => Math.floor(min + Math.random() * (max + 1 - min));
+const getRandomNumberLength = (min, max = 9) => Math.floor(min + Math.random() * (max + 1 - min));
+
+const fromNumber = 0;
+const x = getRandomNumber(fromNumber);
+const y = getRandomNumber(fromNumber);
+const strNumber = getRandomNumberLength(fromNumber);
+
+const progres = (x, y) => {  
+ let result = [] 
+ while(result.length <= 10 )  {   
+   x = x + y
+   result.push(x)
+ }
+
+  return result
+}
+
+const generateQuestionAnswer = () => {
+let question = progres(x, y)
+console.log(question)
+const answer = question[strNumber]
+let z = '..'
+question[strNumber] = z
+
+ 
+
+  return [question, answer];
+};
+console.log(generateQuestionAnswer())
