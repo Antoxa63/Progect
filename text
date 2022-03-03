@@ -73,3 +73,33 @@ question[strNumber] = z
   return [question, answer];
 };
 console.log(generateQuestionAnswer())
+
+
+const progres = (x, y) => {  
+ let result = [] 
+ while(result.length <= 10 )  {   
+   x = x + y
+   result.push(x)
+ }
+  return result
+}
+const getRandomNumber = (min, max = 10) => Math.floor(min + Math.random() * (max + 1 - min));
+const getRandomNumberLength = (min, max = 8) => Math.floor(min + Math.random() * (max + 1 - min));
+
+const description = 'What number is missing in the progression?';
+
+const generateQuestionAnswer = () => {
+  const fromNumber = 0;
+
+  const firstNumber = getRandomNumber(fromNumber);
+  const secondNumber = getRandomNumber(fromNumber);
+  const str = getRandomNumberLength(fromNumber)
+  let z = ".."
+
+  let answer = progres(firstNumber, secondNumber)
+  const qiestion = answer[str].toString()
+  answer[str] = z 
+  answer = answer.toString()
+  return [answer, qiestion];
+};
+console.log(generateQuestionAnswer())
