@@ -1,0 +1,20 @@
+Проверка кол-ва одинаковых слов в тексте
+
+import _ from 'lodash';
+
+// BEGIN (write your solution here)
+const countWords = (text) => {
+  let str = text;
+  str = str.toLowerCase();
+  str = _.words(str);
+  const result = {};
+  for (const name of str) {
+    if (Object.hasOwn(result, name)) {
+      result[name] += 1;
+    } else {
+      result[name] = 1;
+    }
+  }
+  return result;
+};
+export default countWords;
